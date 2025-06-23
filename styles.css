@@ -1,0 +1,51 @@
+:root {
+  --main-color: #37517e;
+}
+
+.hero-section {
+  background-color: var(--main-color);
+}
+
+.hero-section a {
+  color: white;
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+.anim-image {
+  animation: move-up 1s infinite alternate;
+}
+
+.text-blue {
+  color: var(--main-color) !important;
+}
+
+.gray {
+  width: 10%;
+  height: 2px;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
+}
+
+.blue {
+  width: 50%;
+  height: 3px;
+  margin: auto;
+  background-color: var(--bs-info);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
